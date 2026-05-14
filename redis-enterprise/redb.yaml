@@ -1,0 +1,11 @@
+apiVersion: app.redislabs.com/v1alpha1
+kind: RedisEnterpriseDatabase
+metadata:
+  name: redb
+  namespace: redis-enterprise
+  labels:
+    app: redis-enterprise
+spec:
+  memorySize: 256MB
+  shardCount: 1
+  replication: false
